@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "linkedin lowercase",
+  "version": "1.0",
+  "description": "turns all of linkedin lowercase",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.linkedin.com/*"
+      ],
+      "css": [
+        "style.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}

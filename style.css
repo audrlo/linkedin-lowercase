@@ -1,0 +1,12 @@
+/* the whole job, basically: CSS lowercases rendered text without touching the DOM */
+* {
+  text-transform: lowercase !important;
+}
+
+/* don't mangle text the user is typing or has typed */
+input,
+textarea,
+[contenteditable="true"],
+[contenteditable="true"] * {
+  text-transform: none !important;
+}
